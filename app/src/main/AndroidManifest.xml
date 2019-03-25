@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.Asmaa.SuperMarket.ServicesActivity"></activity>
-        <activity android:name="com.Asmaa.SuperMarket.ComplainsActivity" />
-        <activity android:name="com.Asmaa.SuperMarket.Addproducts" />
-        <activity android:name="com.Asmaa.SuperMarket.LoginActivity">
+        <activity android:name=".AddNewCustomerActivity"></activity>
+        <activity android:name=".ServicesActivity" />
+        <activity android:name=".ComplainsActivity" />
+        <activity android:name=".Addproducts" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewCustomerActivity"
+    android:padding="30dp"
+    >
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upperGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".3"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/topAddressGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottomAddressGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/midGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"
+        />
+     <android.support.constraint.Guideline
+        android:id="@+id/afterMidGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".7"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imgAddCst"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="@id/txtAreaName"
+        app:layout_constraintBottom_toBottomOf="@id/txtPhoneNumber"
+        app:layout_constraintRight_toLeftOf="@id/midGuideline"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_person_add_black_24dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="5dp"
+        >
+
+        <RadioButton
+            android:id="@+id/firstRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جوالين"
+            android:textSize="25sp"
+            android:padding="5dp"
+            />
+
+        <RadioButton
+            android:id="@+id/secondRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثلاجة"
+            android:textSize="25sp"
+            android:padding="5dp"
+            />
+
+        <RadioButton
+            android:id="@+id/thirdRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عميل خاص"
+            android:textSize="25sp"
+            android:padding="5dp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtAreaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="المنطقة :"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/upperGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTxtAreaName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="المنطقة :"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/txtAreaName"
+        app:layout_constraintBottom_toBottomOf="txtAreaName"
+        app:layout_constraintRight_toLeftOf="@id/afterMidGuideline"
+        app:layout_constraintLeft_toRightOf="@id/midGuideline"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/txtMarketName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="المنطقة :"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/txtAreaName"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTxtMarketName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="اسم الماركت"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/txtMarketName"
+        app:layout_constraintBottom_toBottomOf="txtMarketName"
+        app:layout_constraintRight_toLeftOf="@id/afterMidGuideline"
+        app:layout_constraintLeft_toRightOf="@id/midGuideline"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/txtCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اسم العميل :"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/txtMarketName"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTxCustomerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="سم العميل"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/txtCustomerName"
+        app:layout_constraintBottom_toBottomOf="txtCustomerName"
+        app:layout_constraintRight_toLeftOf="@id/afterMidGuideline"
+        app:layout_constraintLeft_toRightOf="@id/midGuideline"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رقم الوبايل :"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/txtCustomerName"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTxPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="رقم الوبايل"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/txtPhoneNumber"
+        app:layout_constraintBottom_toBottomOf="txtPhoneNumber"
+        app:layout_constraintRight_toLeftOf="@id/afterMidGuideline"
+        app:layout_constraintLeft_toRightOf="@id/midGuideline"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/txtAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="العنوان :"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/topAddressGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTxAdress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="العنوان"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/topAddressGuideline"
+        app:layout_constraintBottom_toTopOf="@id/bottomAddressGuideline"
+        app:layout_constraintRight_toLeftOf="@id/txtAdress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
